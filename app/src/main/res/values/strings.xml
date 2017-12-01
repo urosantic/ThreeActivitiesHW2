@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ThreeActivitiesHW2</string>
+    <string name="take_and_display_picture">Take and Display Picture</string>
+    <string name="emi_calculator">EMI Calculator</string>
+    <string name="person_form">Person Form</string>
+    <string name="name">Name</string>
+    <string name="gender">Gender</string>
+    <string name="age">Age</string>
+    <string name="email">Email</string>
+    <string name="send_list">Send List</string>
+    <string name="add_person">Add Person</string>
+    <string name="loan_amount">Loan Amount</string>
+    <string name="roi">ROI</string>
+    <string name="loan_tenure">Loan Tenure</string>
+    <string name="amount">Amount</string>
+</resources>

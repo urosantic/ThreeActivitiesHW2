@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.threeactivitieshw2.peopleFormActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/personName"
+        android:textSize="25sp"
+        android:hint="@string/name"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:inputType="textEmailAddress"
+        android:id="@+id/personEmail"
+        android:textSize="25sp"
+        android:hint="@string/email"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/personAge"
+        android:textSize="25sp"
+        android:hint="@string/age"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/personGender"
+        android:textSize="25sp"
+        android:hint="@string/gender"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/btnAdd"
+        android:onClick="addPersonToTheList"
+        android:text="@string/add_person"
+        android:textSize="25sp"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/btnSendList"
+        android:text="@string/send_list"
+        android:onClick="sendList"
+        android:textSize="25sp"
+        android:layout_height="wrap_content" />
+</LinearLayout>
