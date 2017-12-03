@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     public void buttonPressed(View view) {
         switch (view.getId()) {
             case R.id.takeDisplayPicture :
-                Intent intent = new Intent(this,takePictureActivity.class);
+                Intent intent = new Intent(this,takePicActivity.class);
                 startActivity(intent);
                 break;
 

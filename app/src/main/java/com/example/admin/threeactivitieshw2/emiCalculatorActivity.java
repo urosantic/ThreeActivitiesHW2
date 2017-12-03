@@ -30,9 +30,8 @@ public class emiCalculatorActivity extends AppCompatActivity {
                 progress = i;
                 textViewLoan.setText("Amount " + sbLoan.getProgress() + "/" + sbLoan.getMax());
                 value1 = sbLoan.getProgress();
-                //amt = value1 + value2 + value3;
-                amt = value1 * (value2*0.01) * value3;
-                //amt = (value1 * (value2/(12*100) * Math.pow((1 + (value2/(12*100))),value3*12))/Math.pow((1+(value2/(12*100))),value3*12-1));
+                amt = value1 * value2 * (Math.pow((1+value2),value3))/(Math.pow((1+ value2),value3) -1);
+
                 textViewAmount.setText("Amount Payable Monthly Rate \n" + Double.toString(amt));
             }
 
@@ -56,9 +55,7 @@ public class emiCalculatorActivity extends AppCompatActivity {
                 progress = i;
                 textViewRIO.setText("RIO % " + sbRIO.getProgress() + "/" + sbRIO.getMax());
                 value2 = sbRIO.getProgress();
-                amt = value1 * (value2*0.01) * value3;
-                //amt = value1 + value2 + value3;
-                //amt = (value1 * (value2/(100*12) * Math.pow((1 + (value2/(12*100))),value3*12))/Math.pow((1+(value2/(12*100))),value3*12-1));
+                amt = value1 * value2 * (Math.pow((1+value2),value3))/(Math.pow((1+ value2),value3) -1);
                 textViewAmount.setText("Amount Payable Monthly Rate \n" + Double.toString(amt));
             }
 
@@ -82,10 +79,7 @@ public class emiCalculatorActivity extends AppCompatActivity {
                 progress = i;
                 textViewLength.setText("Loan Tenure " + sbLength.getProgress() + "/" + sbLength.getMax());
                 value3 = sbLength.getProgress();
-                amt = value1 * (value2*0.01) * value3;
-
-                //amt = value1 + value2 + value3;
-               // amt = (value1 * (value2/(12*100)) * Math.pow((1 + (value2/(12*100))),value3*12))/Math.pow((1+(value2/(12*100))),value3*12-1);
+                amt = value1 * value2 * (Math.pow((1+value2),value3))/(Math.pow((1+ value2),value3) -1);
                 textViewAmount.setText("Amount Payable Monthly Rate \n" + Double.toString(amt));
             }
 

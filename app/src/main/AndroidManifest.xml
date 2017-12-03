@@ -19,7 +19,7 @@
         <activity android:name=".emiCalculatorActivity" />
         <activity android:name=".peopleFormActivity" />
         <activity android:name=".ListOfPeopleActivity" />
-        <activity android:name=".takePictureActivity"></activity>
+        <activity android:name=".takePicActivity"></activity>
     </application>
 
 </manifest>

@@ -31,8 +31,6 @@ public class ListOfPeopleActivity extends AppCompatActivity {
                     LinearLayout.LayoutParams.WRAP_CONTENT
             );
 
-            //textView.setTextSize(TypedValue.COMPLEX_UNIT_SP,25);
-            //textView.setBackgroundColor(Color.parseColor("#rrggbb"));
 
             textView.setText("Name: " + person.getName() + "    Age: " + person.getAge() + "\n" +
                              "Email: " + person.getEmail() + "  Gender: " + person.getGender());
